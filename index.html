@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jam-UI</title>
+    <meta name="description" content="Vadx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/assets/app.css" media="screen" title="no title">
+  </head>
+  <body>
+    <header id="header">
+      <div class="main clearfix">
+        <span class="logo">Jam-UI</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="main clearfix">
+        <div class="demo-home" style="text-align:center;">
+          <h4 style="">Jam-UI</h4>
+          <p>
+            A simply Webpack2+PostCss+cssNext framework
+          </p>
+        </div>
+
+        <pre>
+          <code class="code-content">
+            <span>jam-ui/</span>
+            <span>│   └── index.html</span>
+            <span>├── src/</span>
+            <span>│   └── assets/</span>
+            <span>│       └── components/</span>
+            <span>│           └── alerts.css</span>
+            <span>│           └── buttons.css</span>
+            <span>│           └── forms.css</span>
+            <span>│           └── grid.css.css</span>
+            <span>│           └── lists.css</span>
+            <span>│           └── tables.css</span>
+            <span>│           └── tooltips.css</span>
+            <span>│       └── layout/</span>
+            <span>│           └── container.css</span>
+            <span>│           └── footer.css</span>
+            <span>│           └── header.css</span>
+            <span>│       └── shared/</span>
+            <span>│           └── default.css</span>
+            <span>│           └── normalize.css</span>
+            <span>│           └── settings.css</span>
+            <span>│           └── typography.css</span>
+            <span>├──package.json</span>
+            <span>├──postcss.config.js</span>
+            <span>├──webpack.config.js</span>
+            <span>└──readme.md</span>
+          </code>
+        </pre>
+
+        <div class="separate-line"></div>
+
+        <h5 id="typography">Typography</h5>
+        <p>
+          <a href="">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h1>Heading H1</h1>
+        <h2>Heading H2</h2>
+        <h3>Heading H3</h3>
+        <h4>Heading H4</h4>
+        <h5>Heading H5</h5>
+        <h6>Heading H6</h6>
+
+        <div class="separate-line"></div>
+
+
+        <h5 id="buttons">Buttons</h5>
+
+        <div>
+          <button class="btn">Default Button</button><span style="margin:0 10px"></span>
+          <button class="btn btn-primary">Primary Button</button><span style="margin:0 10px"></span>
+          <button class="btn btn-outline">Outlined Button</button><span style="margin:0 10px"></span>
+          <button class="btn btn-clear">Clear Button</button>
+        </div>
+
+        <div class="separate-line"></div>
+
+        <h5 id="Tooltips">Tooltips</h5>
+
+        <div class="row">
+          <a class="tooltip--top" data-tooltip="Tooltip top" href="javascript:void(0)">Tooltip top</a>
+          <span style="margin:0 10px"></span>
+					<a class="tooltip--right" data-tooltip="Tooltip right" href="javascript:void(0)">Tooltip right</a>
+          <span style="margin:0 10px"></span>
+					<a class="tooltip--bottom" data-tooltip="Tooltip bottom" href="javascript:void(0)">Tooltip bottom</a>
+          <span style="margin:0 10px"></span>
+					<a class="tooltip--left" data-tooltip="Tooltip left" href="javascript:void(0)">Tooltip left</a>
+        </div>
+
+        <div class="separate-line"></div>
+
+        <h5 id="forms">Forms</h5>
+        <form>
+          <fieldset>
+            <div class="row">
+              <div class="col">
+                <label for="typeText">Text</label><br/>
+                <input placeholder="Input type text" id="typeText" type="text">
+              </div>
+              <div class="col">
+                <label for="typeEmail">Email</label><br/>
+                <input placeholder="Input type Email" id="typeEmail" type="email">
+              </div>
+              <div class="col">
+                <label for="typePassword">Password</label><br/>
+                <input placeholder="Input type Password" id="typePassword" type="password">
+              </div>
+              <div class="col">
+                <label for="Select">Select</label><br/>
+                <select id="Select" style="width:100%;">
+                  <option value="1">Item 1</option>
+                  <option value="2">Item 2</option>
+                  <option value="3">Item 3</option>
+                  <option value="4">Item 4</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label for="Textarea">Comment</label><br/>
+                <textarea placeholder="Textarea…" id="Textarea"></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col" style="text-align:right;">
+                <input id="checkbox" type="checkbox">
+                <label for="checkbox">Send a copy to yourself</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col" style="text-align:right;">
+                <input class="btn btn-primary" value="Send" type="submit">
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+
+        <div class="separate-line"></div>
+
+        <h5 id="grid">Grid</h5>
+        <div class="row row-demo">
+          <div class="col">Col</div>
+        </div>
+
+        <div class="row row-demo">
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+        </div>
+
+        <div class="row row-demo">
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+        </div>
+
+        <div class="row row-demo">
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+        </div>
+        <div class="row row-demo">
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+          <div class="col">Col</div>
+        </div>
+
+        <div class="separate-line"></div>
+
+        <h5 class="alerts">Alerts</h5>
+        <div class="alert alert-success">
+          <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="">dolore eu fugiat nulla pariatur</a>.
+        </div>
+
+        <div class="alert alert-error">
+          <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="">dolore eu fugiat nulla pariatur</a>.
+        </div>
+
+        <div class="alert alert-info">
+          <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="">dolore eu fugiat nulla pariatur</a>.
+        </div>
+
+        <div class="alert alert-warning">
+          <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="">dolore eu fugiat nulla pariatur</a>.
+        </div>
+
+        <div class="separate-line"></div>
+
+        <h5 id="tables">Table</h5>
+        <table>
+          <thead>
+            <tr>
+              <th>Col 1</th>
+              <th>Col 2</th>
+              <th>Col 3</th>
+              <th>Col 4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item</td>
+              <td>Item</td>
+              <td>Item</td>
+              <td>Item</td>
+            </tr>
+            <tr>
+              <td>Item</td>
+              <td>Item</td>
+              <td>Item</td>
+              <td>Item</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <h5 id="List">List</h5>
+        <!-- Unordered list -->
+
+        <div class="row">
+          <div class="col">
+            <!-- Unordered list -->
+            <ul>
+              <li>Unordered list item 1</li>
+              <li>Unordered list item 2</li>
+              <li>Unordered list item 3</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <!-- Ordered list -->
+            <ol>
+              <li>Ordered list item 1</li>
+              <li>Ordered list item 2</li>
+              <li>Ordered list item 3</li>
+            </ol>
+          </div>
+
+          <div class="col">
+            <!-- Description list -->
+            <dl>
+              <dt>Description list item 1</dt>
+              <dd>Description list item 1.1</dd>
+              <dt>Description list item 2</dt>
+            </dl>
+          </div>
+        </div>
+
+        <div class="separate-line"></div>
+
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="main clearfix">
+        <b>Jam-UI</b> by Vadx
+      </div>
+    </footer>
+  </body>
+</html>

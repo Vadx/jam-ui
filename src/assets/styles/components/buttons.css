@@ -1,0 +1,95 @@
+.btn,
+a.btn,
+button {
+  display: inline-block;
+  padding: 5px 20px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  outline: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid var(--button-background);
+  color: var(--button-color);
+  background: var(--button-background);
+  border-radius: 3px;
+
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.btn-primary {
+  font-weight: 700;
+}
+.btn-outline {
+  background: transparent;
+  border-color: var(--button-background);
+}
+.btn-clear {
+  background: transparent;
+  border-color: transparent;
+}
+
+
+.btn,
+a.btn,
+button  {
+  &:focus, &:active:focus, &.active:focus, &.focus, &:active.focus, &.active.focus {
+    outline: none;
+  }
+  &:hover, &:focus, &.focus {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+  &:active, &.active {
+    background-image: none;
+    outline: 0;
+  }
+  &.disabled, &[disabled] {
+    cursor: not-allowed;
+    filter: alpha(opacity = 65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+  }
+}
+
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity = 65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
+}
+
+a.btn.disabled, fieldset[disabled] .btn.disabled {
+  pointer-events: none;
+}
+
+.btn {
+  &:focus, &.focus, &:hover, &:active, &.active {
+    opacity: 0.8;
+  }
+  &:active {
+    &:hover, &:focus {
+      opacity: 0.8;
+    }
+  }
+}
