@@ -1,9 +1,9 @@
 # jam-ui
 A simply Webpack2+PostCss+cssNext framework
 
-#Structure
-
-  jam-ui/
+## Structure
+```sh
+ jam-ui/
   │   └── index.html
   ├── src/
   │   └── assets/
@@ -28,3 +28,4 @@ A simply Webpack2+PostCss+cssNext framework
   ├──postcss.config.js
   ├──webpack.config.js
   └──readme.md
+  ```
