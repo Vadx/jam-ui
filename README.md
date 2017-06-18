@@ -1,2 +1,2 @@
-# jam-ui.github.io
+# jam-ui
 A simply Webpack2+PostCss+cssNext framework
