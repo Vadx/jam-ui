@@ -1,5 +1,5 @@
 {
-  "name": "test-webpack",
+  "name": "jam-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "postcss-import": "^9.1.0",
     "postcss-loader": "^1.3.3",
     "precss": "^1.4.0",
-    "webpack": "^2.2.1"
+    "webpack": "^3.4.1"
   },
   "dependencies": {
     "cssnano": "^3.10.0"

@@ -1,5 +1,5 @@
 # jam-ui
-A simply Webpack2+PostCss+cssNext framework
+A simply Webpack3+PostCss+cssNext framework
 
 **Demo:** https://vadx.github.io/jam-ui/
 
